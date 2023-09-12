@@ -1,7 +1,5 @@
 import java.util.Arrays;
 
-// NEW
-
 public class Opgave4a {
   int[] numbersA = new int[10];
   int[] numbersB = new int[10];
