@@ -21,6 +21,15 @@ public class Opgave2c {
       sum += numbers[i];
     }
 
+    int min = 1000; // One larger than the largest possible value
+    int max = 99; // One smaller than the smallest possible value
+    for (int i = 0; i < numbers.length; i++)
+      if (min > numbers[i])
+        min = numbers[i];
+      else if (max < numbers[i])
+        max = numbers[i];
+    System.out.printf("Smallest: %d%nLargest: %d", min, max);
+
     average = (double) sum / numbers.length;
     System.out.printf("%nSum: %d.%nAverage: %.1f.%n", sum, average);
   }
