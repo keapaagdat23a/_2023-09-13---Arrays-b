@@ -16,10 +16,14 @@ public class Opgave2c {
     int sum = 0;
     double average = 0;
 
+    // Create random values and calculate sum
+
     for (int i = 0; i < numbers.length; i++) {
       numbers[i] = random.nextInt(999 - 100 + 1) + 100;
       sum += numbers[i];
     }
+
+    // Find and print smallest and largest value
 
     int min = 1000; // One larger than the largest possible value
     int max = 99; // One smaller than the smallest possible value
@@ -29,6 +33,8 @@ public class Opgave2c {
       else if (max < numbers[i])
         max = numbers[i];
     System.out.printf("Smallest: %d%nLargest: %d", min, max);
+
+    // Calculate and print average
 
     average = (double) sum / numbers.length;
     System.out.printf("%nSum: %d.%nAverage: %.1f.%n", sum, average);
